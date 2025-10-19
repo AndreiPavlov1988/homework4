@@ -28,5 +28,18 @@ public class Main {
         } else {
             System.out.println("Неизвестная операционная система");
         }
+//task3
+        int year = 2021;
+        boolean isLeapYear;
+        if (year <= 1584) {
+            isLeapYear = false;
+        } else {
+            isLeapYear = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+        }
+        if (isLeapYear) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
     }
 }
